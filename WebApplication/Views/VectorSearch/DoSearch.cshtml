@@ -1,0 +1,20 @@
+﻿@model List<ResultSearch>
+@{
+    ViewData["Title"] = "Vector Search";
+}
+
+@using (Html.BeginForm("DoSearch", "VectorSearch", FormMethod.Post))
+{       
+    @Html.TextBox("searchPrompt", "")
+    <input type="submit" value="Search" />
+}
+
+<div id="results">
+@if(this.Model != null)
+{
+    @foreach(var r in this.Model)
+    {
+        @Html.Raw($"<img src='{r.url}' class='result'/>");
+    };
+}
+</div>
