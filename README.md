@@ -1,6 +1,6 @@
 # Pluralsight-Vector-Databases-and-Embeddings-for-Developers
 
-Welcome to the Repository that contains demo code for my course : 
+Welcome to the Repository that contains demo code for my course : https://app.pluralsight.com/library/courses/vector-databases-embeddings-developers
 
 To run the demo, you need an Azure Subscription with :
 - a storage account with anonymous access enabled (or any other web hosting solution for accessing images through HTTPS requests)
